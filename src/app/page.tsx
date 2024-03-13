@@ -9,10 +9,12 @@ import Testimonials from "@/components/Testimonials";
 import Mentions from "@/components/Mentions";
 import DownloadApp from "@/components/DownloadApp";
 import Footer from "@/components/Footer";
+import LiveGoldPrice from "@/components/LiveGoldPrice";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
+      <LiveGoldPrice />
       <Navbar />
       <Hero />
       <Features />
