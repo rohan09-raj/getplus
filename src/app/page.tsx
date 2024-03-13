@@ -1,6 +1,7 @@
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import SharkTank from "@/components/SharkTank";
 import Working from "@/components/Working";
 
 export default function Home() {
@@ -10,8 +11,9 @@ export default function Home() {
       <Hero />
       <Features />
       <section className="flex justify-center m-6">
-        <section className="flex max-w-7xl w-full">
+        <section className="flex flex-col max-w-7xl w-full gap-12">
           <Working />
+          <SharkTank />
         </section>
       </section>
     </main>
