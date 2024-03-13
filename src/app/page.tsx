@@ -6,6 +6,7 @@ import SharkTank from "@/components/SharkTank";
 import Working from "@/components/Working";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
+import Mentions from "@/components/Mentions";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Schemes />
           <Partners />
           <Testimonials />
+          <Mentions />
         </section>
       </section>
     </main>
