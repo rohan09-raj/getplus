@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "./Button";
+import Rating from "./Rating";
 
 export default function Hero() {
   return (
@@ -33,8 +34,9 @@ export default function Hero() {
           <p className="text-[#495057] text-2xl leading-normal md:text-base">
             Get upto 1 gm gold extra on every 10gm of gold investment
           </p>
-          <div>
-            <p className="text-[#686868] text-sm">Rated 4.9</p>
+          <div className="flex items-center gap-2">
+            <p className="text-[#686868] text-sm mt-1">Rated 4.9</p>
+            <Rating rating={4} totalRating={5} />
           </div>
           <div className="flex items-center">
             <Image
