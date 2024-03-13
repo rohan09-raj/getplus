@@ -50,8 +50,8 @@ export default function Mentions() {
 
   return (
     <section className="flex flex-col w-full items-center gap-10">
-      <h1 className="text-4xl text-[#868E96] font-bold mt-8">Mentions</h1>
-      <div className="flex flex-wrap w-full justify-between items-center">
+      <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">Golden buzz about Plus</h1>
+      <div className="flex flex-wrap w-full justify-between items-center gap-6 md:justify-center">
         {mentions.map((mention, index) => (
           <Image
             key={index}
@@ -62,7 +62,7 @@ export default function Mentions() {
           />
         ))}
       </div>
-      <div className="flex flex-wrap gap-8 w-full justify-between">
+      <div className="flex flex-wrap gap-8 w-full justify-between md:justify-center">
         {articles.map((article, index) => (
           <ArticleCard
             key={index}

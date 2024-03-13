@@ -58,7 +58,7 @@ export default function Schemes() {
 
   return (
     <section className="flex flex-col w-full items-center gap-10">
-      <h1 className="text-4xl text-[#868E96] font-bold mt-8">
+      <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
         Explore Schemes
       </h1>
       <section className="flex flex-wrap justify-center gap-8">
