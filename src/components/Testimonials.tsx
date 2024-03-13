@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./reusables/Button";
 import PartnerCard from "./cards/PartnerCard";
 import TestimonialCard from "./cards/TestimonialCard";
 

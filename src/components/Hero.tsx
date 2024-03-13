@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Button from "./Button";
-import Rating from "./Rating";
+import Button from "./reusables/Button";
+import Rating from "./reusables/Rating";
 
 export default function Hero() {
   return (

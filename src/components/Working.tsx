@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import IconCardWithBg from "./cards/IconCardWithBg";
-import Button from "./Button";
+import Button from "./reusables/Button";
 
 export default function Working() {
   const working = [

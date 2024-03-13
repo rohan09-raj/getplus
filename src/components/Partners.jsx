@@ -1,5 +1,5 @@
 "use client";
-import Button from "./Button";
+import Button from "./reusables/Button";
 import PartnerCard from "./cards/PartnerCard";
 
 export default function Partners() {

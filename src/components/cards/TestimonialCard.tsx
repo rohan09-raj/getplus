@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Rating from "../Rating";
+import Rating from "../reusables/Rating";
 
 export default function TestimonialCard({
   name,
