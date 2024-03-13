@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Schemes from "@/components/Schemes";
 import SharkTank from "@/components/SharkTank";
 import Working from "@/components/Working";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           <Working />
           <SharkTank />
           <Schemes />
+          <Partners />
         </section>
       </section>
     </main>
