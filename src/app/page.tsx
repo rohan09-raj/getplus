@@ -8,6 +8,7 @@ import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import Mentions from "@/components/Mentions";
 import DownloadApp from "@/components/DownloadApp";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <DownloadApp />
         </section>
       </section>
+      <Footer />
     </main>
   );
 }
