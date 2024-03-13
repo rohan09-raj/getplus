@@ -7,6 +7,7 @@ import Working from "@/components/Working";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import Mentions from "@/components/Mentions";
+import DownloadApp from "@/components/DownloadApp";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <Partners />
           <Testimonials />
           <Mentions />
+          <DownloadApp />
         </section>
       </section>
     </main>
