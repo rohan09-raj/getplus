@@ -6,7 +6,8 @@ import "./globals.css";
 const dmSans = DM_Sans({ preload: true, subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://getplus.vercel.app/"),
+  metadataBase: new URL("http://getplus.vercel.app"),
+  alternates: { canonical: "/" },
   title: "Plus Bharat ka jewellery savings app - Plus Gold",
   description:
     "Buy Digital Gold Online in India at Plus Gold. Start your digital gold investment today and redeem your investment as jewellery at a partner jeweller store.",
@@ -48,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="canonical" href="http://getplus.vercel.app/" />
+        <link rel="canonical" href="http://getplus.vercel.app" />
       </Head>
       <body className={dmSans.className}>{children}</body>
     </html>
