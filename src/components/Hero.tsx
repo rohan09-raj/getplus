@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="flex items-center">
             <Image
               className="gap-2"
-              src="/images/avatars.png"
+              src="/images/avatars.avif"
               width={80}
               height={26}
               alt="Avatars"
@@ -88,7 +88,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-1/2 md:w-full">
-          <Image src="/images/hero.webp" width={700} height={700} alt="Hero" />
+          <Image src="/images/hero.avif" width={700} height={700} alt="Hero" />
         </div>
       </section>
     </section>

@@ -18,7 +18,7 @@ export default function SharkTank() {
       <video
         className="w-1/2 h-auto rounded-2xl lg:w-3/5 md:w-full"
         controls
-        poster="https://getplus-backend-prod.s3.ap-south-1.amazonaws.com/media/thumbnail.png"
+        poster="/images/thumbnail.avif"
       >
         <source
           src="https://getplus-backend-prod.s3.ap-south-1.amazonaws.com/media/Plus+Gold+_+Thankyou+for+watching+.mp4"
