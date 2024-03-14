@@ -26,6 +26,7 @@ export default function Working() {
       </h1>
       <div className="flex gap-16 lg:flex-col lg:items-center">
         <iframe
+          title="Plus Gold Video"
           className="w-1/2 h-80 rounded-2xl aspect-video lg:w-full sm:h-60"
           src="https://www.youtube.com/embed/cENtAAm7EKk?si=t99y1qyizGWPP0mG"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
