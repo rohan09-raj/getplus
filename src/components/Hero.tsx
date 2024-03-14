@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="flex gap-2">
             <span className="flex text-[#F76707] items-center">
               <Image
-                src="/icons/orange_tick.png"
+                src="https://storage.googleapis.com/getplus.in/images/orange_tick.png"
                 height={20}
                 width={20}
                 alt="Orange Tick"
@@ -20,7 +20,7 @@ export default function Hero() {
             </span>
             <span className="flex text-[#1E63BE] items-center">
               <Image
-                src="/icons/blue_clock.png"
+                src="https://storage.googleapis.com/getplus.in/images/blueTimer.png"
                 height={20}
                 width={20}
                 alt="Blue Clock"
@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="flex items-center">
             <Image
               className="gap-2"
-              src="/images/avatars.avif"
+              src="/images/avatars.png"
               width={80}
               height={26}
               alt="Avatars"
