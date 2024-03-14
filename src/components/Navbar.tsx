@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
 import { useState } from "react";
+import Modal from "./reusables/Modal";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +15,11 @@ export default function Navbar() {
 
   return (
     <nav className="flex bg-[#FFFAF1] p-4 justify-center">
+      {isModalOpen && (
+        <Modal onCloseClick={() => setIsModalOpen(false)}>
+          <h1>Modal</h1>
+        </Modal>
+      )}
       <div className="max-w-7xl flex w-full items-center justify-between">
         <Image
           className="h-auto w-auto md:h-6"
@@ -23,7 +29,10 @@ export default function Navbar() {
           alt="Plus"
         />
         <div className="hidden md:flex">
-          <button className="flex items-center gap-2 bg-[#9D002B] text-white px-4 py-2 rounded-lg md:text-sm">
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="flex items-center gap-2 bg-[#9D002B] text-white px-4 py-2 rounded-lg md:text-sm"
+          >
             Download App
             <Image
               src="/icons/playstore.png"
@@ -68,7 +77,10 @@ export default function Navbar() {
           <Link className="text-[#000000A6]" href="/">
             Partner With Us
           </Link>
-          <button className="flex items-center gap-2 bg-[#9D002B] text-white px-4 py-2 rounded-lg md:hidden">
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="flex items-center gap-2 bg-[#9D002B] text-white px-4 py-2 rounded-lg md:hidden"
+          >
             Download App
             <Image
               src="/icons/playstore.png"
