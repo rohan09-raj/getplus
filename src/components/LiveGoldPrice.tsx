@@ -34,18 +34,18 @@ export default function LiveGoldPrice() {
   }, []);
 
   return (
-    <section className="w-[335px] h-24 fixed bottom-12 right-10 z-10">
-      <div className="flex items-center gap-4 bg-[#FFF3DD] px-4 py-2 rounded-t-md">
+    <section className="w-[335px] h-24 fixed bottom-10 right-10 md:bottom-4 md:right-1 z-10 sm:w-[250px]">
+      <div className="flex items-center gap-4 bg-[#FFF3DD] px-4 py-2 rounded-t-md sm:gap-1">
         <Image
           src="https://storage.googleapis.com/getplus.in/images/live_bracket_blinker.png"
           alt="Live Gold Price"
           height={20}
           width={20}
         />
-        <p className="text-sm text-[#212529] font-semibold mr-8">
+        <p className="text-sm text-[#212529] font-semibold mr-8 sm:text-xs sm:mr-2">
           Live Gold Price
         </p>
-        <p className="text-sm text-[#FF0000] font-semibold">
+        <p className="text-sm text-[#FF0000] font-semibold sm:text-xs">
           Valid For: {timer} sec
         </p>
       </div>
@@ -56,9 +56,9 @@ export default function LiveGoldPrice() {
           height={70}
           width={45}
         />
-        <p className="text-sm text-[#141414CC] font-semibold">
+        <p className="text-sm text-[#141414CC] font-semibold sm:text-xs">
           99.9% | 24K:{" "}
-          <span className="text-lg text-[#141414CC] font-semibolds">
+          <span className="text-lg text-[#141414CC] font-semibolds sm:text-base">
             ₹{liveGoldPrice}/gm
           </span>
         </p>

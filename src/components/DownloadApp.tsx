@@ -5,10 +5,10 @@ export default function DownloadApp() {
   return (
     <section className="flex md:flex-col-reverse gap-8 items-center bg-[#FFFAF1] border border-[#FFE483] rounded-2xl p-14 sm:p-6">
       <div className="flex flex-col gap-4 justify-center">
-        <h3 className="text-3xl text-[#212529] font-semibold sm:text-2xl md:text-center">
+        <h3 className="text-3xl text-[#212529] font-semibold sm:text-xl md:text-center">
           Download the app
         </h3>
-        <p className="text-[#212529] md:text-center">
+        <p className="text-[#212529] md:text-center sm:text-sm">
           Plus, a revolutionary app that helps Indian homemakers to pre-plan
           their jewellery purchase by saving monthly & gaining 10% IRR
         </p>

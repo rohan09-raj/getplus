@@ -62,7 +62,7 @@ export default function Schemes() {
       <p className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
         Explore Schemes
       </p>
-      <section className="flex flex-wrap justify-center gap-8">
+      <section className="flex flex-wrap justify-center gap-8 sm:gap-4">
         {schemes.map((scheme, index) => (
           <SchemeCard
             key={index}

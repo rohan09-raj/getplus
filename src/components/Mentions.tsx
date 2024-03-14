@@ -57,6 +57,7 @@ export default function Mentions() {
       <div className="flex flex-wrap w-full justify-between items-center gap-6 md:justify-center">
         {mentions.map((mention, index) => (
           <Image
+            className="md:w-1/3"
             key={index}
             src={mention}
             width={220}

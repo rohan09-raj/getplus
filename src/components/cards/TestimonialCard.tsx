@@ -11,8 +11,8 @@ export default function TestimonialCard({
 }) {
   return (
     <div className="flex flex-col w-80 gap-3 bg-[#FFFAF1] border border-[#FFE483] rounded-2xl p-6">
-      <p className="text-2xl text-[#212529] font-semibold">{name}</p>
-      <p className="text-[#212529] flex-grow">{testimonial}</p>
+      <p className="text-2xl text-[#212529] font-semibold sm:text-xl">{name}</p>
+      <p className="text-[#212529] flex-grow sm:text-sm">{testimonial}</p>
       <Rating rating={rating} totalRating={5} />
     </div>
   );

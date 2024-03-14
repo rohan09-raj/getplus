@@ -10,7 +10,7 @@ export default function SchemeCard({
   description: string;
 }) {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1 sm:w-3/4">
       <Image
         className="rounded-2xl"
         src={image}
@@ -18,8 +18,8 @@ export default function SchemeCard({
         height={200}
         alt={title}
       />
-      <p className="text-[#181A1C] font-semibold mt-2">{title}</p>
-      <span className="flex text-[#267F29] text-sm items-center">
+      <p className="text-[#181A1C] font-semibold mt-2 sm:text-sm">{title}</p>
+      <span className="flex text-[#267F29] text-sm items-center sm:text-xs">
         <Image
           src="https://storage.googleapis.com/getplus.in/images/greenTick.png"
           height={20}

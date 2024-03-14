@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="flex flex-col max-w-7xl w-full gap-8">
         <div className="flex items-center md:flex-col">
           <div className="flex flex-col w-1/2 gap-4 md:w-3/4 md:items-center">
-            <p className="text-3xl text-[#212529] md:text-center md:text-2xl">
+            <p className="text-3xl text-[#212529] md:text-center md:text-2xl sm:text-xl">
               Your money is 100% secure!
             </p>
-            <p className="text-[#212529] md:text-center">
+            <p className="text-[#212529] md:text-center sm:text-sm">
               Your asset is stored in secured vaults at Augmont and available to
               withdraw anytime
             </p>
@@ -47,7 +47,7 @@ export default function Footer() {
               height={50}
               width={95}
             />
-            <p className="md:text-center">
+            <p className="md:text-center sm:text-sm">
               Plus, a revolutionary app that helps Indian homemakers to pre-plan
               their jewellery purchase by saving monthly & gaining 10% IRR
             </p>
@@ -58,6 +58,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <Image
+                  className="sm:h-8 sm:w-8"
                   src="https://img.icons8.com/ios-filled/50/facebook--v1.png"
                   alt="Facebook"
                   height={40}
@@ -70,6 +71,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <Image
+                  className="sm:h-8 sm:w-8"
                   src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png"
                   alt="Instagram"
                   height={40}
@@ -82,6 +84,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <Image
+                  className="sm:h-8 sm:w-8"
                   src="https://img.icons8.com/ios-filled/50/twitterx--v1.png"
                   alt="Twitter"
                   height={40}
@@ -94,6 +97,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <Image
+                  className="sm:h-8 sm:w-8"
                   src="https://img.icons8.com/ios-filled/50/linkedin.png"
                   alt="LinkedIn"
                   height={40}
@@ -106,6 +110,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <Image
+                  className="sm:h-8 sm:w-8"
                   src="https://img.icons8.com/ios-filled/50/youtube-play.png"
                   alt="YouTube"
                   height={40}
@@ -143,23 +148,33 @@ export default function Footer() {
           </div>
           <div className="flex justify-center w-1/2 md:w-full gap-16">
             <div className="flex flex-col gap-2">
-              <Link href="/">About Us</Link>
-              <Link href="/">Privacy Policy</Link>
-              <Link href="/">Terms & Conditions</Link>
+              <Link className="sm:text-sm" href="/">
+                About Us
+              </Link>
+              <Link className="sm:text-sm" href="/">
+                Privacy Policy
+              </Link>
+              <Link className="sm:text-sm" href="/">
+                Terms & Conditions
+              </Link>
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="/">FAQs</Link>
-              <Link href="/">Blogs</Link>
+              <Link className="sm:text-sm" href="/">
+                FAQs
+              </Link>
+              <Link className="sm:text-sm" href="/">
+                Blogs
+              </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-center gap-1 sm:text-sm">
           <p>© FinShakti Solutions Pvt. Ltd.</p>
-          <p className="text-center text-sm">
+          <p className="text-center text-sm sm:text-xs">
             <strong>Address :</strong> B.No 19, H.No 1413, R.S. Pal, Near
             Mahatma Gandhi School, Nagpur, Maharashtra, 440014
           </p>
-          <p className="text-center text-sm">
+          <p className="text-center text-sm sm:text-xs">
             <strong>Email : </strong> founders@getplus.in{" "}
             <strong>Phone : </strong> +91-9035202565
           </p>
@@ -179,7 +194,7 @@ function Partners({ image, text }: { image: string; text: string }) {
         height={60}
         width={60}
       />
-      <p className="text-[#212529] text-center font-semibold">{text}</p>
+      <p className="text-[#212529] text-center font-semibold sm:text-sm">{text}</p>
     </div>
   );
 }
