@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -35,13 +34,13 @@ export default function Navbar() {
           >
             Download App
             <Image
-              src="/icons/playstore.png"
+              src="https://plusgold.in/images/playstore.png"
               width={16}
               height={16}
               alt="Playstore"
             />
             <Image
-              src="/icons/appstore.png"
+              src="https://plusgold.in/images/appstore.png"
               width={16}
               height={16}
               alt="Appstore"
@@ -83,13 +82,13 @@ export default function Navbar() {
           >
             Download App
             <Image
-              src="/icons/playstore.png"
+              src="https://plusgold.in/images/playstore.png"
               width={16}
               height={16}
               alt="Playstore"
             />
             <Image
-              src="/icons/appstore.png"
+              src="https://plusgold.in/images/appstore.png"
               width={16}
               height={16}
               alt="Appstore"
