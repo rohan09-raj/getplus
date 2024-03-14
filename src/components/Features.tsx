@@ -4,7 +4,7 @@ export default function Features() {
   const features = [
     {
       icon: "https://storage.googleapis.com/getplus.in/images/extraOffer.png",
-      text: "Upto 0.5gm extra instantly",
+      text: "Up to 0.5gm extra instantly",
     },
     {
       icon: "https://storage.googleapis.com/getplus.in/images/redeem.png",

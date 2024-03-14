@@ -35,7 +35,7 @@ export default function Working() {
           <WorkingPoint
             index={1}
             title="Save with Plus & Get 1gm Extra"
-            description="Save in gold in one time or SIP, & get upto 1gm extra on your savings"
+            description="Save in gold in one time or SIP, & get up to 1gm extra on your savings"
           />
           <WorkingPoint
             index={2}
@@ -78,9 +78,9 @@ function WorkingPoint({
 }) {
   return (
     <div className="flex">
-      <h1 className="text-[#FFD788] w-16 font-bold text-5xl">{index}.</h1>
+      <p className="text-[#FFD788] w-16 font-bold text-5xl">{index}.</p>
       <div className="flex flex-col">
-        <h2 className="text-base text-[#212529] font-semibold">{title}</h2>
+        <p className="text-base text-[#212529] font-semibold">{title}</p>
         <p className="text-sm text-[#212529]">{description}</p>
       </div>
     </div>

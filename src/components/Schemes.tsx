@@ -8,25 +8,25 @@ export default function Schemes() {
       image:
         "https://storage.googleapis.com/getplus.in/images/Wedding%20Saving%20Scheme%20.png",
       title: "Wedding Saving Scheme",
-      description: "Upto 22% returns",
+      description: "Up to 22% returns",
     },
     {
       image:
         "https://storage.googleapis.com/getplus.in/images/dhanteras%20scheme.png",
       title: "Dhanteras Special Scheme",
-      description: "Upto 22% returns",
+      description: "Up to 22% returns",
     },
     {
       image:
         "https://storage.googleapis.com/getplus.in/images/anniversary%20scheme.png",
       title: "Anniversary Gift Scheme",
-      description: "Upto 22% returns",
+      description: "Up to 22% returns",
     },
     {
       image:
         "https://storage.googleapis.com/getplus.in/images/akshay%20tritya%20scheme.png",
       title: "Akshaya Tritya Scheme",
-      description: "Upto 22% returns",
+      description: "Up to 22% returns",
     },
   ];
 
