@@ -1,8 +1,6 @@
 "use client";
 import Button from "./reusables/Button";
 import PartnerCard from "./cards/PartnerCard";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import CustomCarousel from "./reusables/Carousel";
 
 export default function Partners() {
