@@ -1,6 +1,10 @@
 "use client";
-import Carousel from "react-multi-carousel";
+import dynamic from 'next/dynamic'
 import "react-multi-carousel/lib/styles.css";
+ 
+const Carousel = dynamic(() => import("react-multi-carousel"), {
+  loading: () => <p>Loading...</p>,
+})
 
 export default function CustomCarousel({
   children,
