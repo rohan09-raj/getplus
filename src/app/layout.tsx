@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const dmSans = DM_Sans({ preload: true, subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://getplus.vercel.app/"),
