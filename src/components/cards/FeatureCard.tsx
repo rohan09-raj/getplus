@@ -5,15 +5,17 @@ export default function FeatureCard({
   title,
   description,
   theme,
+  onClick,
 }: {
   image: string;
   title: string;
   description: string;
   theme: string;
+  onClick: () => void;
 }) {
   return (
-    <section className={`w-64 h-full m-auto rounded-xl ${theme}`}>
-      <div className="w-full h-full bg-gradient-to-t from-transparent to-[#FFFFFF33]">
+    <section onClick={onClick} className={`w-64 h-full m-auto rounded-xl ${theme}`}>
+      <div className="w-full h-full rounded-xl bg-gradient-to-t from-transparent to-[#FFFFFF33] cursor-pointer hover:bg-[#00000033]">
         <Image
           className="h-1/2 w-auto ml-auto"
           src={image}

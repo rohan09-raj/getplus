@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="flex bg-[#FFFAF1] p-4 justify-center">
       {isModalOpen && (
         <Modal onCloseClick={() => setIsModalOpen(false)}>
-          <p>Modal</p>
+          <p className="flex-grow flex items-center justify-center text-center font-bold">Modal</p>
         </Modal>
       )}
       <div className="max-w-7xl flex w-full items-center justify-between">
@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="hidden md:flex">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="flex items-center gap-2 bg-[#9D002B] text-white px-4 py-2 rounded-lg md:text-sm"
+            className="flex items-center gap-2 bg-[#9D002B] hover:bg-[#7F001F] text-white px-4 py-2 rounded-lg md:text-sm"
           >
             Download App
             <Image
@@ -78,7 +78,7 @@ export default function Navbar() {
           </Link>
           <button
             onClick={() => setIsModalOpen(true)}
-            className="flex items-center gap-2 bg-[#9D002B] text-white px-4 py-2 rounded-lg md:hidden"
+            className="flex items-center gap-2 bg-[#9D002B] hover:bg-[#7F001F] active:translate-y-px transition-all text-white px-4 py-2 rounded-lg md:hidden"
           >
             Download App
             <Image

@@ -1,11 +1,22 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import Button from "./reusables/Button";
 import Rating from "./reusables/Rating";
+import Modal from "./reusables/Modal";
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="flex justify-center">
+      {isModalOpen && (
+        <Modal onCloseClick={() => setIsModalOpen(false)}>
+          <p className="flex-grow flex items-center justify-center text-center font-bold">
+            Modal
+          </p>
+        </Modal>
+      )}
       <section className="flex max-w-7xl w-full m-6 justify-center gap-10 md:flex-col">
         <div className="flex flex-col gap-4 justify-center w-1/2 md:w-full">
           <div className="flex gap-2">
@@ -51,10 +62,20 @@ export default function Hero() {
             </span>
           </div>
           <div className="flex gap-4 items-center my-4 md:my-0">
-            <Button bordered={false} onClick={() => {}}>
+            <Button
+              bordered={false}
+              onClick={() => {
+                setIsModalOpen(true);
+              }}
+            >
               Purchase Scheme
             </Button>
-            <Button bordered={true} onClick={() => {}}>
+            <Button
+              bordered={true}
+              onClick={() => {
+                setIsModalOpen(true);
+              }}
+            >
               View Details
             </Button>
           </div>

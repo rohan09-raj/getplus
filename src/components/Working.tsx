@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import IconCardWithBg from "./cards/IconCardWithBg";
 import Button from "./reusables/Button";
+import Modal from "./reusables/Modal";
 
 export default function Working() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const working = [
     {
       icon: "https://storage.googleapis.com/getplus.in/images/no_penalty1.png",
@@ -21,6 +25,13 @@ export default function Working() {
 
   return (
     <section className="flex flex-col w-full items-center">
+      {isModalOpen && (
+        <Modal onCloseClick={() => setIsModalOpen(false)}>
+          <p className="flex-grow flex items-center justify-center text-center font-bold">
+            Modal
+          </p>
+        </Modal>
+      )}
       <p className="text-4xl text-[#868E96] font-bold mb-8 text-center md:text-3xl">
         How does the app work?
       </p>
@@ -52,10 +63,20 @@ export default function Working() {
       </div>
       <div className="flex w-full my-16 justify-between md:my-8 gap-2">
         {working.map((work, index) => (
-          <IconCardWithBg key={index} icon={work.icon} text={work.text} />
+          <IconCardWithBg
+            key={index}
+            icon={work.icon}
+            text={work.text}
+            onClick={() => setIsModalOpen(true)}
+          />
         ))}
       </div>
-      <Button bordered={true} onClick={() => {}}>
+      <Button
+        bordered={true}
+        onClick={() => {
+          window.open("https://www.youtube.com/watch?v=cENtAAm7EKk", "_blank");
+        }}
+      >
         <Image
           src="https://plusgold.in/images/youtubeiconred.png"
           width={24}
@@ -79,9 +100,13 @@ function WorkingPoint({
 }) {
   return (
     <div className="flex md:flex-col">
-      <p className="text-[#FFD788] w-12 font-bold text-5xl sm:text-4xl">{index}.</p>
+      <p className="text-[#FFD788] w-12 font-bold text-5xl sm:text-4xl">
+        {index}.
+      </p>
       <div className="flex flex-col">
-        <p className="text-base text-[#212529] font-semibold sm:text-sm">{title}</p>
+        <p className="text-base text-[#212529] font-semibold sm:text-sm">
+          {title}
+        </p>
         <p className="text-sm text-[#212529] sm:text-xs">{description}</p>
       </div>
     </div>

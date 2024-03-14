@@ -1,8 +1,13 @@
+"use client";
+import { useState } from "react";
 import FeatureCard from "./cards/FeatureCard";
 import SchemeCard from "./cards/SchemeCard";
 import CustomCarousel from "./reusables/Carousel";
+import Modal from "./reusables/Modal";
 
 export default function Schemes() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const schemes = [
     {
       image:
@@ -59,6 +64,13 @@ export default function Schemes() {
 
   return (
     <section className="flex flex-col w-full items-center gap-10">
+      {isModalOpen && (
+        <Modal onCloseClick={() => setIsModalOpen(false)}>
+          <p className="flex-grow flex items-center justify-center text-center font-bold">
+            Modal
+          </p>
+        </Modal>
+      )}
       <p className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
         Explore Schemes
       </p>
@@ -69,6 +81,9 @@ export default function Schemes() {
             image={scheme.image}
             title={scheme.title}
             description={scheme.description}
+            onClick={() => {
+              setIsModalOpen(true);
+            }}
           />
         ))}
       </section>
@@ -81,6 +96,9 @@ export default function Schemes() {
               title={feature.title}
               description={feature.description}
               theme={feature.theme}
+              onClick={() => {
+                setIsModalOpen(true);
+              }}
             />
           ))}
         </CustomCarousel>
