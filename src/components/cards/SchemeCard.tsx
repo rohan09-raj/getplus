@@ -12,7 +12,7 @@ export default function SchemeCard({
   onClick: () => void;
 }) {
   return (
-    <div onClick={onClick} className="flex flex-col gap-1 sm:w-1/2 md:items-center cursor-pointer">
+    <div onClick={onClick} className="flex flex-col gap-1 md:w-2/5 cursor-pointer">
       <Image
         className="rounded-2xl"
         src={image}
