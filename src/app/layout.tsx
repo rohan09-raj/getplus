@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
@@ -46,9 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="canonical" href="http://getplus.vercel.app/" />
-      </head>
+      </Head>
       <body className={dmSans.className}>{children}</body>
     </html>
   );
