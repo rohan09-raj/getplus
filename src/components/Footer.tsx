@@ -41,7 +41,12 @@ export default function Footer() {
         </div>
         <div className="flex md:flex-col gap-6">
           <div className="flex flex-col w-1/2 md:w-full md:items-center gap-4">
-            <Image src="/icons/plus.png" alt="Plus" height={50} width={95} />
+            <Image
+              src="https://storage.googleapis.com/getplus.in/images/plusNewLogo%20.png"
+              alt="Plus"
+              height={50}
+              width={95}
+            />
             <p className="md:text-center">
               Plus, a revolutionary app that helps Indian homemakers to pre-plan
               their jewellery purchase by saving monthly & gaining 10% IRR

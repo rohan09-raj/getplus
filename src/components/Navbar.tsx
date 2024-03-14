@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-7xl flex w-full items-center justify-between">
         <Image
           className="h-auto w-auto md:h-6"
-          src="/icons/plus.png"
+          src="https://storage.googleapis.com/getplus.in/images/plusNewLogo%20.png"
           width={125}
           height={35}
           alt="Plus"
