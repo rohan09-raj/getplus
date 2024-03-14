@@ -21,9 +21,9 @@ export default function Working() {
 
   return (
     <section className="flex flex-col w-full items-center">
-      <h1 className="text-4xl text-[#868E96] font-bold my-8 text-center md:text-3xl">
+      <p className="text-4xl text-[#868E96] font-bold my-8 text-center md:text-3xl">
         How does the app work?
-      </h1>
+      </p>
       <div className="flex gap-16 lg:flex-col lg:items-center">
         <iframe
           title="Plus Gold Video"

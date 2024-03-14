@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="flex flex-col max-w-7xl w-full gap-8">
         <div className="flex items-center md:flex-col">
           <div className="flex flex-col w-1/2 gap-4 md:w-3/4 md:items-center">
-            <h1 className="text-3xl text-[#212529] md:text-center md:text-2xl">
+            <p className="text-3xl text-[#212529] md:text-center md:text-2xl">
               Your money is 100% secure!
-            </h1>
+            </p>
             <p className="text-[#212529] md:text-center">
               Your asset is stored in secured vaults at Augmont and available to
               withdraw anytime

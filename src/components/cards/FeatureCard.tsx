@@ -22,7 +22,7 @@ export default function FeatureCard({
           alt={title}
         />
         <div className="h-1/2 flex flex-col justify-between pb-8 px-4 pt-4">
-          <h1 className="text-xl text-white font-semibold">{title}</h1>
+          <p className="text-xl text-white font-semibold">{title}</p>
           <p className="text-white">{description}</p>
         </div>
       </div>

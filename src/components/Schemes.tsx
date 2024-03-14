@@ -45,13 +45,13 @@ export default function Schemes() {
     },
     {
       image: "https://storage.googleapis.com/getplus.in/images/winnerCup.png",
-      title: "Buy Gold Coins",
+      title: "Withdraw in cash",
       description: "At best rates from trusted jewellers",
       theme: "bg-[#3E2894]",
     },
     {
       image: "https://storage.googleapis.com/getplus.in/images/coupon.png",
-      title: "Buy Gold Coins",
+      title: "Get Jeweller Coupons",
       description: "At best rates from trusted jewellers",
       theme: "bg-[#FFD47B]",
     },
@@ -59,9 +59,9 @@ export default function Schemes() {
 
   return (
     <section className="flex flex-col w-full items-center gap-10">
-      <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
+      <p className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
         Explore Schemes
-      </h1>
+      </p>
       <section className="flex flex-wrap justify-center gap-8">
         {schemes.map((scheme, index) => (
           <SchemeCard

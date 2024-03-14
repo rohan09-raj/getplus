@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="flex bg-[#FFFAF1] p-4 justify-center">
       {isModalOpen && (
         <Modal onCloseClick={() => setIsModalOpen(false)}>
-          <h1>Modal</h1>
+          <p>Modal</p>
         </Modal>
       )}
       <div className="max-w-7xl flex w-full items-center justify-between">

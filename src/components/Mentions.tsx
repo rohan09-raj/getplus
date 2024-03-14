@@ -51,9 +51,9 @@ export default function Mentions() {
 
   return (
     <section className="flex flex-col w-full items-center gap-10">
-      <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
+      <p className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
         Golden buzz about Plus
-      </h1>
+      </p>
       <div className="flex flex-wrap w-full justify-between items-center gap-6 md:justify-center">
         {mentions.map((mention, index) => (
           <Image
