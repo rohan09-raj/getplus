@@ -8,7 +8,7 @@ export default function PartnerCard({
   title: string,
 }) {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex items-center flex-col gap-3">
       <Image
         className="rounded-2xl"
         src={image}

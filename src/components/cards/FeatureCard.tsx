@@ -12,7 +12,7 @@ export default function FeatureCard({
   theme: string;
 }) {
   return (
-    <section className={`w-64 rounded-xl ${theme}`}>
+    <section className={`w-64 h-full m-auto rounded-xl ${theme}`}>
       <div className="w-full h-full bg-gradient-to-t from-transparent to-[#FFFFFF33]">
         <Image
           className="h-1/2 w-auto ml-auto"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ArticleCard from "./cards/ArticleCard";
+import CustomCarousel from "./reusables/Carousel";
 
 export default function Mentions() {
   const mentions = [
@@ -30,7 +31,7 @@ export default function Mentions() {
     },
     {
       image: "https://plusgold.in/images/startupnewArticle.png",
-      title: "India’s First Jewellery Savings App Plus raises USD...",
+      title: "India’s First Jewellery Savings App Plus raises...",
       logo: "https://plusgold.in/images/startUpNewsLogo.png",
       link: "https://startupnews.fyi/2023/08/18/indias-first-jewellery-savings-app-plus-raises-usd-350k-in-its-seed-round/",
     },
@@ -50,7 +51,9 @@ export default function Mentions() {
 
   return (
     <section className="flex flex-col w-full items-center gap-10">
-      <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">Golden buzz about Plus</h1>
+      <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
+        Golden buzz about Plus
+      </h1>
       <div className="flex flex-wrap w-full justify-between items-center gap-6 md:justify-center">
         {mentions.map((mention, index) => (
           <Image
@@ -62,17 +65,19 @@ export default function Mentions() {
           />
         ))}
       </div>
-      <div className="flex flex-wrap gap-8 w-full justify-between md:justify-center">
-        {articles.map((article, index) => (
-          <ArticleCard
-            key={index}
-            image={article.image}
-            title={article.title}
-            logo={article.logo}
-            link={article.link}
-          />
-        ))}
-      </div>
+      <section className="w-full">
+        <CustomCarousel>
+          {articles.map((article, index) => (
+            <ArticleCard
+              key={index}
+              image={article.image}
+              title={article.title}
+              logo={article.logo}
+              link={article.link}
+            />
+          ))}
+        </CustomCarousel>
+      </section>
     </section>
   );
 }

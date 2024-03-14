@@ -1,5 +1,6 @@
 import FeatureCard from "./cards/FeatureCard";
 import SchemeCard from "./cards/SchemeCard";
+import CustomCarousel from "./reusables/Carousel";
 
 export default function Schemes() {
   const schemes = [
@@ -71,17 +72,18 @@ export default function Schemes() {
           />
         ))}
       </section>
-
-      <section className="flex flex-wrap justify-center gap-8">
-        {features.map((feature, index) => (
-          <FeatureCard
-            key={index}
-            image={feature.image}
-            title={feature.title}
-            description={feature.description}
-            theme={feature.theme}
-          />
-        ))}
+      <section className="w-full">
+        <CustomCarousel>
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              image={feature.image}
+              title={feature.title}
+              description={feature.description}
+              theme={feature.theme}
+            />
+          ))}
+        </CustomCarousel>
       </section>
     </section>
   );

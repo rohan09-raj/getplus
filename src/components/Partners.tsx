@@ -1,6 +1,9 @@
 "use client";
 import Button from "./reusables/Button";
 import PartnerCard from "./cards/PartnerCard";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import CustomCarousel from "./reusables/Carousel";
 
 export default function Partners() {
   const partners = [
@@ -29,10 +32,16 @@ export default function Partners() {
       <h1 className="text-4xl text-[#868E96] font-bold mt-8 text-center md:text-3xl">
         Explore Partners
       </h1>
-      <section className="flex flex-wrap justify-center gap-8">
-        {partners.map((partner, index) => (
-          <PartnerCard key={index} image={partner.image} title={partner.title} />
-        ))}
+      <section className="w-full">
+        <CustomCarousel>
+          {partners.map((partner, index) => (
+            <PartnerCard
+              key={index}
+              image={partner.image}
+              title={partner.title}
+            />
+          ))}
+        </CustomCarousel>
       </section>
       <Button bordered={true} onClick={() => {}}>
         Become a Partner

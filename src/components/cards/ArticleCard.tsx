@@ -12,7 +12,7 @@ export default function ArticleCard({
   link: string;
 }) {
   return (
-    <div className="flex flex-col gap-4 w-72 bg-[#FFFAF1] border border-[#FFE483] rounded-2xl p-6">
+    <div className="flex w-72 m-auto flex-col gap-4 w-72 bg-[#FFFAF1] border border-[#FFE483] rounded-2xl p-6">
       <Image
         className="rounded-2xl"
         src={image}
