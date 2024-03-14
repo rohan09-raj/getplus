@@ -1,0 +1,23 @@
+{
+  "short_name": "Plus",
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/getplus.in/images/plusNewLogo%20.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://storage.googleapis.com/getplus.in/images/plusNewLogo%20.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "name": "Plus Gold",
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff",
+  "description": "Buy Digital Gold Online in India at Plus Gold. Start your digital gold investment today and redeem your investment as jewellery at a partner jeweller store."
+}
