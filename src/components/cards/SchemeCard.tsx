@@ -24,7 +24,7 @@ export default function SchemeCard({
           src="https://storage.googleapis.com/getplus.in/images/greenTick.png"
           height={20}
           width={20}
-          alt="Orange Tick"
+          alt="Green Tick"
         />{" "}
         {description}
       </span>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -46,7 +47,7 @@ export default function Footer() {
               their jewellery purchase by saving monthly & gaining 10% IRR
             </p>
             <div className="flex gap-4">
-              <a
+              <Link
                 href="https://www.facebook.com/PlusGold.in"
                 target="_blank"
                 rel="noreferrer"
@@ -57,8 +58,8 @@ export default function Footer() {
                   height={40}
                   width={40}
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/plusgold.in/"
                 target="_blank"
                 rel="noreferrer"
@@ -69,8 +70,8 @@ export default function Footer() {
                   height={40}
                   width={40}
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://x.com/getplushq?s=21&t=HSN_D4Tl94Xcu5l2jezTXg"
                 target="_blank"
                 rel="noreferrer"
@@ -81,8 +82,8 @@ export default function Footer() {
                   height={40}
                   width={40}
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/company/getplusofficial/"
                 target="_blank"
                 rel="noreferrer"
@@ -93,8 +94,8 @@ export default function Footer() {
                   height={40}
                   width={40}
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.youtube.com/@Plus-App/featured"
                 target="_blank"
                 rel="noreferrer"
@@ -105,10 +106,10 @@ export default function Footer() {
                   height={40}
                   width={40}
                 />
-              </a>
+              </Link>
             </div>
             <div className="flex gap-4 md:justify-center">
-              <a
+              <Link
                 href="https://play.google.com/store/apps/details?id=com.fs.getplus"
                 target="_blank"
                 rel="noreferrer"
@@ -120,8 +121,8 @@ export default function Footer() {
                   width={200}
                   height={50}
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://apps.apple.com/in/app/plus-save-for-jewellery/id6443759619"
                 target="_blank"
                 rel="noreferrer"
@@ -132,18 +133,18 @@ export default function Footer() {
                   width={200}
                   height={50}
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center w-1/2 md:w-full gap-16">
             <div className="flex flex-col gap-2">
-              <a href="/">About Us</a>
-              <a href="/">Privacy Policy</a>
-              <a href="/">Terms & Conditions</a>
+              <Link href="/">About Us</Link>
+              <Link href="/">Privacy Policy</Link>
+              <Link href="/">Terms & Conditions</Link>
             </div>
             <div className="flex flex-col gap-2">
-              <a href="/">FAQs</a>
-              <a href="/">Blogs</a>
+              <Link href="/">FAQs</Link>
+              <Link href="/">Blogs</Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DownloadApp() {
   return (
@@ -12,7 +13,7 @@ export default function DownloadApp() {
           their jewellery purchase by saving monthly & gaining 10% IRR
         </p>
         <div className="flex gap-4 md:justify-center">
-          <a
+          <Link
             href="https://play.google.com/store/apps/details?id=com.fs.getplus"
             target="_blank"
             rel="noreferrer"
@@ -24,8 +25,8 @@ export default function DownloadApp() {
               width={200}
               height={50}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://apps.apple.com/in/app/plus-save-for-jewellery/id6443759619"
             target="_blank"
             rel="noreferrer"
@@ -36,7 +37,7 @@ export default function DownloadApp() {
               width={200}
               height={50}
             />
-          </a>
+          </Link>
         </div>
       </div>
       <Image
