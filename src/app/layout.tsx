@@ -6,7 +6,7 @@ import "./globals.css";
 const dmSans = DM_Sans({ preload: true, subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://getplus.vercel.app"),
+  metadataBase: new URL("https://getplus.vercel.app"),
   alternates: { canonical: "/" },
   title: "Plus Bharat ka jewellery savings app - Plus Gold",
   description:
