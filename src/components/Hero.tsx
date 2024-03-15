@@ -42,9 +42,9 @@ export default function Hero() {
           <h1 className="text-[#212529] text-5xl leading-tight md:text-3xl">
             10gm + 1gm Golden Bonanza
           </h1>
-          <p className="text-[#495057] text-2xl leading-normal md:text-base">
+          <h2 className="text-[#495057] text-2xl leading-normal md:text-base">
             Get upto 1 gm gold extra on every 10gm of gold investment
-          </p>
+          </h2>
           <div className="flex items-center gap-2">
             <p className="text-[#686868] text-sm mt-1">Rated 4.9</p>
             <Rating rating={4} totalRating={5} />
