@@ -10,6 +10,7 @@ export default function CallUs() {
 
   const handleCopyNumber = () => {
     navigator.clipboard.writeText(HELPLINE);
+    alert("Copied to clipboard!");
   };
 
   return (
