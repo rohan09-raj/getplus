@@ -34,7 +34,7 @@ export default function LiveGoldPrice() {
   }, []);
 
   return (
-    <section className="w-[335px] h-24 fixed bottom-10 right-10 md:bottom-4 md:right-1 z-10 sm:w-[250px]">
+    <section className="w-[335px] h-24 fixed bottom-10 right-10 md:bottom-3 md:right-3 z-10 sm:w-[250px]">
       <div className="flex items-center gap-4 bg-[#FFF3DD] px-4 py-2 rounded-t-md sm:gap-1">
         <Image
           src="https://storage.googleapis.com/getplus.in/images/live_bracket_blinker.png"
