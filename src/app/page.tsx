@@ -11,6 +11,7 @@ import DownloadApp from "@/components/DownloadApp";
 import Footer from "@/components/Footer";
 import LiveGoldPrice from "@/components/LiveGoldPrice";
 import Image from "next/image";
+import CallUs from "@/components/CallUs";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           <Testimonials />
           <Mentions />
           <DownloadApp />
+          <CallUs />
         </section>
       </section>
       <Footer />
