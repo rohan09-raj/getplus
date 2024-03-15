@@ -1,13 +1,26 @@
 import Image from "next/image";
 import ArticleCard from "./cards/ArticleCard";
 import CustomCarousel from "./reusables/Carousel";
+import Link from "next/link";
 
 export default function Mentions() {
   const mentions = [
-    "https://storage.googleapis.com/getplus.in/images/timeapplaud.png",
-    "https://storage.googleapis.com/getplus.in/images/yourstory.png",
-    "https://storage.googleapis.com/getplus.in/images/vccircle.png",
-    "https://storage.googleapis.com/getplus.in/images/startuplogo.png",
+    {
+      image: "https://storage.googleapis.com/getplus.in/images/timeapplaud.png",
+      link: "https://timesapplaud.com/know-how-the-plus-app-helps-indian-homemakers-save-for-jewellery-and-gold/",
+    },
+    {
+      image: "https://storage.googleapis.com/getplus.in/images/yourstory.png",
+      link: "https://yourstory.com/2023/01/this-savings-app-helps-users-plan-for-their-next-jewellery-purchase",
+    },
+    {
+      image: "https://storage.googleapis.com/getplus.in/images/vccircle.png",
+      link: "https://www.vccircle.com/nymbleupplus-raise-early-stage-funding",
+    },
+    {
+      image: "https://storage.googleapis.com/getplus.in/images/startuplogo.png",
+      link: "https://startupstorymedia.com/insights-jito-angel-network-invests-in-jewellery-savings-platform-plus/",
+    },
   ];
 
   const articles = [
@@ -56,14 +69,20 @@ export default function Mentions() {
       </p>
       <div className="flex flex-wrap w-full justify-between items-center gap-6 md:justify-center">
         {mentions.map((mention, index) => (
-          <Image
+          <Link
             className="md:w-1/3"
             key={index}
-            src={mention}
-            width={220}
-            height={200}
-            alt="Organization"
-          />
+            href={mention.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src={mention.image}
+              width={220}
+              height={200}
+              alt="Organization"
+            />
+          </Link>
         ))}
       </div>
       <section className="w-full">
