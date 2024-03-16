@@ -17,14 +17,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <LiveGoldPrice />
+      <Navbar />
       <Image
-        className="w-full md:h-6 object-cover"
+        className="w-full md:h-6 object-cover mt-[80px]"
         src="https://plusgold.in/images/banner_shark_tank_india.png"
         alt="Shark Tank India"
         height={50}
         width={1000}
       />
-      <Navbar />
       <Hero />
       <Features />
       <section className="flex justify-center m-6">

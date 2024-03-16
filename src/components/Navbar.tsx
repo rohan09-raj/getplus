@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex bg-[#FFFAF1] p-4 justify-center">
+    <nav className="fixed w-full flex bg-[#FFFAF1] p-4 justify-center z-20">
       {isModalOpen && (
         <Modal onCloseClick={() => setIsModalOpen(false)}>
           <p className="flex-grow flex items-center justify-center text-center font-bold">Modal</p>
