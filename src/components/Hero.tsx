@@ -96,7 +96,7 @@ export default function Hero() {
             />
             <Image
               src="https://storage.googleapis.com/getplus.in/images/lendbox.png"
-              width={60}
+              width={58}
               height={25}
               alt="Lendbox"
             />

@@ -32,6 +32,7 @@ export default function CustomCarousel({
 
   return (
     <Carousel
+      itemAriaLabel="carousel"
       customLeftArrow={<CustomLeftArrow />}
       customRightArrow={<CustomRightArrow />}
       swipeable={true}
@@ -49,7 +50,11 @@ export default function CustomCarousel({
 
 const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => {
   return (
-    <button className="absolute -left-3 z-10 cursor-pointer" onClick={onClick}>
+    <button
+      aria-label="Left arrow"
+      className="absolute -left-3 z-10 cursor-pointer"
+      onClick={onClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -70,7 +75,11 @@ const CustomLeftArrow = ({ onClick }: { onClick?: () => void }) => {
 
 const CustomRightArrow = ({ onClick }: { onClick?: () => void }) => {
   return (
-    <button className="absolute -right-3 z-10 cursor-pointer" onClick={onClick}>
+    <button
+      aria-label="Right arrow"
+      className="absolute -right-3 z-10 cursor-pointer"
+      onClick={onClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

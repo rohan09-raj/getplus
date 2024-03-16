@@ -14,7 +14,7 @@ export default function PartnerCard({
         src={image}
         width={290}
         height={200}
-        alt={title}
+        alt="Partner"
       />
       <p className="text-[#181A1C] text-center font-semibold">{title}</p>
     </div>

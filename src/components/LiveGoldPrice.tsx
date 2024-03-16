@@ -39,8 +39,8 @@ export default function LiveGoldPrice() {
         <Image
           src="https://storage.googleapis.com/getplus.in/images/live_bracket_blinker.png"
           alt="Live Gold Price"
-          height={20}
-          width={20}
+          height={18}
+          width={18}
         />
         <p className="text-sm text-[#212529] font-semibold mr-8 sm:text-xs sm:mr-2">
           Live Gold Price
@@ -53,8 +53,8 @@ export default function LiveGoldPrice() {
         <Image
           src="https://storage.googleapis.com/getplus.in/images/gold_live_rate_blocks.png"
           alt="Live Gold Price"
-          height={70}
-          width={45}
+          height={25}
+          width={40}
         />
         <p className="text-sm text-[#141414CC] font-semibold sm:text-xs">
           99.9% | 24K:{" "}

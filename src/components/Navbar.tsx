@@ -41,7 +41,7 @@ export default function Navbar() {
             />
             <Image
               src="https://plusgold.in/images/appstore.png"
-              width={16}
+              width={13}
               height={16}
               alt="Appstore"
             />
