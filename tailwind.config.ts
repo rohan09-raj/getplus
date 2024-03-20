@@ -20,6 +20,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        flash: {
+          "25%": { opacity: "0.2" },
+          "50%": { opacity: "1" },
+          "75%": { opacity: "0.2" },
+        },
+      },
+      animation: {
+        flash: "flash 2s infinite",
+      },
     },
   },
   plugins: [],

@@ -16,7 +16,6 @@ import CallUs from "@/components/CallUs";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <LiveGoldPrice />
       <Navbar />
       <Image
         className="w-full md:h-6 object-cover mt-[80px]"
@@ -25,6 +24,7 @@ export default function Home() {
         height={50}
         width={1000}
       />
+      <LiveGoldPrice />
       <Hero />
       <Features />
       <section className="flex justify-center m-6">
